@@ -38,6 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_subTitle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_total"
             android:hint="Digite valor valor total da conta"
             android:inputType="numberDecimal"
             android:layout_width="match_parent"
@@ -54,6 +55,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_num_people"
             android:layout_width="match_parent"
             android:hint="Digite el numero de pessoas na mesa"
             android:inputType="number"
@@ -63,7 +65,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <RadioGroup
-        android:id="@+id/rg_percentege"
+        android:id="@+id/rg_percenteges"
         android:layout_width="match_parent"
         app:layout_constraintEnd_toEndOf="@+id/til_number_of_people"
         app:layout_constraintStart_toStartOf="@+id/til_number_of_people"
@@ -101,11 +103,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
-        android:layout_marginTop="16dp"
         android:text="Limpar"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
         app:layout_constraintStart_toStartOf="@+id/til_number_of_people"
-        app:layout_constraintTop_toBottomOf="@+id/rg_percentege" />
+        app:layout_constraintTop_toBottomOf="@+id/rg_percenteges" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vertical_guideline"
@@ -117,12 +118,11 @@
     <Button
         android:id="@+id/btn_done"
         android:layout_width="0dp"
-        android:layout_marginStart="4dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="4dp"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="@+id/til_number_of_people"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/rg_percentege" />
+        app:layout_constraintTop_toBottomOf="@+id/rg_percenteges" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
